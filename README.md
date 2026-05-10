@@ -23,8 +23,8 @@
 ###
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Max-ErickDev&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-<img src="https://github-profile-trophy.vercel.app/?username=Max-ErickDev&theme=dracula&title=Yellow&icon=Yellow&text=Yellow&line=Yellow" height="150" alt="trophy graph" />
+  <img src="https://streak-stats.demolab.com?user=Max-ErickDev&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Max-ErickDev&theme=onestark&rank=S,A,B,C" height="150" alt="trophy graph" />
 </div>
 
 ###
