@@ -1,33 +1,39 @@
-name: Generate pacman animation
+name: Gerar animação do Pac-Man
 
 on:
-  schedule: # execute every 12 hours
-   - cron: "0 0 * * *"
-
+  schedule:
+    # Executar a cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
-
   push:
     branches:
-    - main
+      - principal
 
 jobs:
-  generate:
+  gerar:
     permissions:
       contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    
+    # Esta variável força o uso do Node 24 para todas as ações deste Job
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: generate pacman-contribution-graph.svg
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: gerar pacman-contribution-graph.svg
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-
-      - name: push pacman-contribution-graph.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: enviar pacman-contribution-graph.svg para o ramo de saída
+        # Atualizado de v3.1.0 para v4 (ou superior) para suporte nativo ao Node 20/24
+        uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output
+          target_branch: saída
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
