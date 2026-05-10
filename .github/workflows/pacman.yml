@@ -2,11 +2,12 @@ name: Gerar animação do Pac-Man
 
 on:
   schedule:
-    # Executar a cada 12 horas
+    # Executa a cada 12 horas
     - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches:
+      - main
       - principal
 
 jobs:
@@ -16,12 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     
-    # Esta variável força o uso do Node 24 para todas as ações deste Job
+    # Isso resolve o aviso de obsolescência forçando o Node 24
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Checkout do código
+      - name: Checkout do repositório
         uses: actions/checkout@v4
 
       - name: gerar pacman-contribution-graph.svg
@@ -29,11 +30,11 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      - name: enviar pacman-contribution-graph.svg para o ramo de saída
-        # Atualizado de v3.1.0 para v4 (ou superior) para suporte nativo ao Node 20/24
+      - name: enviar para o ramo de saída
+        # Atualizado da v3 para v4 para suportar as novas versões do Node
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: saída
+          target_branch: pacman-output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
