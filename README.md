@@ -7,8 +7,8 @@
 ### 🚀 Sobre Mim
 Sou um desenvolvedor focado no ecossistema **Java** e tecnologias **Web**. Gosto de transformar lógica em soluções reais e estou constantemente aprimorando minhas habilidades em arquitetura de software e bancos de dados.
 
-- 🔭 Atualmente estudando em projetos utilizando **Java e MySQL**.
-- 🌱 Estudando  Desenvolvimento Backend**.
+- 🔭 Atualmente estudando em projetos backend.
+- 🌱 Estudando  Desenvolvimento Backend.
 
 
 ---
@@ -58,5 +58,4 @@ Sou um desenvolvedor focado no ecossistema **Java** e tecnologias **Web**. Gosto
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="Frase do dia" />
 </p>
-
 
