@@ -5,7 +5,7 @@
 </div>
 
 ### 🚀 Sobre Mim
-Sou um desenvolvedor focado no ecossistema **Java** e tecnologias **Web**. Gosto de transformar lógica em soluções reais e estou constantemente aprimorando minhas habilidades em arquitetura de software e bancos de dados.
+Sou um estudante desenvolvedor focado no ecossistema **Java** e tecnologias **Web**. Gosto de transformar lógica em soluções reais e estou constantemente aprimorando minhas habilidades em arquitetura de software e bancos de dados.
 
 - 🔭 Atualmente estudando em projetos backend.
 - 🌱 Estudando  Desenvolvimento Backend.
