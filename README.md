@@ -1,4 +1,4 @@
-<h1 align="center">Hi there 👋 I'm Max Erick</h1>
+<h1 align="center">Olá 👋Eu sou Max Erick</h1>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Disponível%20para%20Projetos-success?style=for-the-badge&logo=github" alt="Status">
@@ -6,8 +6,7 @@
 
 ### 🚀 Sobre Mim
 Sou um estudante desenvolvedor focado no ecossistema **Java** e tecnologias **Web**. Gosto de transformar lógica em soluções reais e estou constantemente aprimorando minhas habilidades em arquitetura de software e bancos de dados.
-
-- 🔭 Atualmente estudando em projetos backend.
+.
 - 🌱 Estudando  Desenvolvimento Backend.
 
 
